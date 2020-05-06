@@ -82,7 +82,6 @@ void trivialMatching::tokenizeString(string ID, string text) {
 }
 
 void trivialMatching::createUnionList() {
-    cout << "union" << endl;
     sort( targetWords.begin(), targetWords.end() );
     targetWords.erase( unique( targetWords.begin(), targetWords.end() ), targetWords.end());
     for(int i = 0; i < database.size(); i++){
@@ -104,7 +103,7 @@ void trivialMatching::createUnionList() {
         unionVector.erase( unique( unionVector.begin(), unionVector.end() ), unionVector.end());
         total = unionVector.size();
         unionVector.clear();
-        cout << total << " " << database[i].second << endl;
+        //cout << total << " " << database[i].second << endl;
         pair<string, int>unionTotal;
         unionTotal = make_pair(database[i].second, total);
         unionNumbers.push_back(unionTotal);
@@ -112,7 +111,6 @@ void trivialMatching::createUnionList() {
 }
 
 void trivialMatching::createIntersectionList() {
-    cout << "intersetion" << endl;
     for(int i = 0; i < database.size(); i++){
         int total = 0;
         for(int j = 0; j < database[i].first.size(); j++) {
@@ -125,7 +123,7 @@ void trivialMatching::createIntersectionList() {
         }
         pair<string, int>intersectionTotal;
         total = intersectionVector.size();
-        cout << total << " " << database[i].second << endl;
+        //cout << total << " " << database[i].second << endl;
         intersectionVector.clear();
         intersectionTotal = make_pair(database[i].second, total);
         intersectionNumbers.push_back(intersectionTotal);
@@ -137,12 +135,11 @@ void trivialMatching::createIntersectionList() {
 }
 
 int trivialMatching::tokenSimilarity() {
-    cout << "Similar" << endl;
     pair<float, string> similarity;
     for(int i = 0; i < unionNumbers.size(); i++){
         float similarPercent = ((float)intersectionNumbers[i].second / (float)unionNumbers[i].second) * 100;
         similarity = make_pair(similarPercent, unionNumbers[i].first);
-        cout << similarPercent << " " << unionNumbers[i].first << endl;
+        cout << "'target.txt' has a " << similarPercent << "% Similarity to '" << unionNumbers[i].first << "'. " << endl;
         similarities.push_back(similarity);
     }
 

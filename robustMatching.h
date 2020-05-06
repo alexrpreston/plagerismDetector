@@ -1,0 +1,14 @@
+//
+// Created by Alex Preston on 5/5/20.
+//
+
+#ifndef PLAGERISMDETECTOR_ROBUSTMATCHING_H
+#define PLAGERISMDETECTOR_ROBUSTMATCHING_H
+
+
+class robustMatching {
+
+};
+
+
+#endif //PLAGERISMDETECTOR_ROBUSTMATCHING_H

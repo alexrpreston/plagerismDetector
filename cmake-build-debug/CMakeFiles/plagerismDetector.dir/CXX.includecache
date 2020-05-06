@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/alexpreston/Work/School/SMU/Classes/Sophmore Year/2nd Semester/Fundamentals of Algorithms/plagerismDetector/trivialMatching.cpp
+trivialMatching.h
+/Users/alexpreston/Work/School/SMU/Classes/Sophmore Year/2nd Semester/Fundamentals of Algorithms/plagerismDetector/trivialMatching.h
+iostream
+-
+fstream
+-
+string
+-
+iostream
+-
+filesystem
+-
+algorithm
+-
+
+/Users/alexpreston/Work/School/SMU/Classes/Sophmore Year/2nd Semester/Fundamentals of Algorithms/plagerismDetector/trivialMatching.h
+vector
+-
+string
+/Users/alexpreston/Work/School/SMU/Classes/Sophmore Year/2nd Semester/Fundamentals of Algorithms/plagerismDetector/string
+

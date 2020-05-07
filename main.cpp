@@ -1,8 +1,10 @@
 #include <iostream>
 #include "trivialMatching.h"
+#include "robustMatching.h"
 int main()
 {
-    std::cout<<"Hello, World!"<<std::endl;
+    robustMatching();
     trivialMatching();
+
     return 0;
 }

@@ -1,7 +1,0 @@
-There are several methods for calculating depreciation, generally based on either the passage of time or the level of activity (or use) of the asset.
-
-Straight-line depreciation
-Straight-line depreciation is the simplest and most often used method. In this method, the company estimates the residual value (also known as salvage value or scrap value) of the asset at the end of the period during which it will be used to generate revenues (useful life). (The salvage value may be zero, or even negative due to costs required to retire it; however, for depreciation purposes salvage value is not generally calculated at below zero.) The company will then charge the same amount to depreciation each year over that period, until the value shown for the asset has reduced from the original cost to the salvage value.
-
-Straight-line method:
-For example, a vehicle that depreciates over 5 years is purchased at a cost of $17,000, and will have a salvage value of $2000. Then this vehicle will depreciate at $3,000 per year, i.e. (17-2)/5 = 3. This table illustrates the straight-line method of depreciation. Book value at the beginning of the first year of depreciation is the origina

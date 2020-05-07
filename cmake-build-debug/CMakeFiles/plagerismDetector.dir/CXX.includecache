@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/Users/alexpreston/Work/School/SMU/Classes/Sophmore Year/2nd Semester/Fundamentals of Algorithms/plagerismDetector/trivialMatching.cpp
-trivialMatching.h
-/Users/alexpreston/Work/School/SMU/Classes/Sophmore Year/2nd Semester/Fundamentals of Algorithms/plagerismDetector/trivialMatching.h
+/Users/alexpreston/Work/School/SMU/Classes/Sophmore Year/2nd Semester/Fundamentals of Algorithms/plagerismDetector/robustMatching.cpp
+robustMatching.h
+/Users/alexpreston/Work/School/SMU/Classes/Sophmore Year/2nd Semester/Fundamentals of Algorithms/plagerismDetector/robustMatching.h
 iostream
 -
 fstream
@@ -21,8 +21,12 @@ filesystem
 -
 algorithm
 -
+chrono
+-
+iostream
+-
 
-/Users/alexpreston/Work/School/SMU/Classes/Sophmore Year/2nd Semester/Fundamentals of Algorithms/plagerismDetector/trivialMatching.h
+/Users/alexpreston/Work/School/SMU/Classes/Sophmore Year/2nd Semester/Fundamentals of Algorithms/plagerismDetector/robustMatching.h
 vector
 -
 string

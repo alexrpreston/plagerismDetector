@@ -12,11 +12,17 @@
 namespace fs = std::__fs::filesystem;
 
 trivialMatching::trivialMatching() {
+    cout << "Jaccard Index Algorithm (Trivial): " << endl;
+    auto start = std::chrono::high_resolution_clock::now();
     readTargetFile();
     readDatabaseFiles();
     createUnionList();
     createIntersectionList();
     tokenSimilarity();
+    auto finish = std::chrono::high_resolution_clock::now();
+
+    auto seconds = std::chrono::duration_cast<std::chrono::seconds>(finish-start);
+    std::cout << "Trivial Version completed in " << seconds.count() << " second.\n";
 }
 
 void trivialMatching::readTargetFile() {

@@ -2,7 +2,7 @@
 
 This project uses a token based algorithm for the trivial implementation and a Sequence based algorithm for the robust implementation. The project can be run with any name or number of text files in the `database` folder so long as they are .txt file. The comparison file in the target directory needs to be named `target.txt`.
 
-# Trivial
+## Trivial
 
 The trivial version uses the Jaccard index which just tokenizes all the words and then divides the Intersection by the Union. You can read more [here](https://en.wikipedia.org/wiki/Jaccard_index).
 

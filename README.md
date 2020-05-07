@@ -8,5 +8,5 @@ The trivial version uses the Jaccard index which just tokenizes all the words an
 
 ## Robust
 
-The robust version uses the Ratcliff-Obershelp similarity. This algorithm recursivly finds the matching Longest Common Substring (LCS) and then divides the total LSC by the total characters. You can read more [here]([https://en.wikipedia.org/wiki/Gestalt_Pattern_Matching](https://en.wikipedia.org/wiki/Gestalt_Pattern_Matching)).
+The robust version uses the Ratcliff-Obershelp similarity. This algorithm recursivly finds the matching Longest Common Substring (LCS) and then divides the total LSC by the total characters. You can read more [here](https://en.wikipedia.org/wiki/Gestalt_Pattern_Matching).
 

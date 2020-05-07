@@ -104,27 +104,28 @@ string robustMatching::longestCommonSubstring(string target, string database) { 
         }
         currentString = 1 - currentString; //The two strings get flipped
     }
-    return target.substr(end - result + 1, result);
+    return target.substr(end - result + 1, result); //We are returning the similar word
 }
 
 int robustMatching::longestCSResusive(string database) {
     string currentLCS = longestCommonSubstring(targetFileLines, database);
     if(currentLCS.size() > 5)totalLCS += currentLCS.size(); //This ensures we aren't counting dummy characters ex: coding --> the 'ing' in flying
+    //This number can be altered for sensitivity
 
 
     std::size_t found = database.find(currentLCS);
     if (found!=std::string::npos && found != 0){
         string leftDatabaseHalf = database.substr(0, found);
-        if(leftDatabaseHalf.size() > 0){
+        if(leftDatabaseHalf.size() > 0){ //So we don't search an empty string
             longestCSResusive(leftDatabaseHalf);
         }
         string rightDatabaseHalf = database.substr(found+currentLCS.size());
-        if(rightDatabaseHalf.size() > 0){
+        if(rightDatabaseHalf.size() > 0){ //So we don't search an empty string
             longestCSResusive(rightDatabaseHalf);
         }
     }
 
-    return totalLCS;
+    return totalLCS; //Returns total characters in common
 
 
 
